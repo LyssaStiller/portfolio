@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+header {
+  min-height: 40px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.logo {
+  width:265px;
+  height: 250px;
+  width: 25%;
+}
+
+.logo img{
+  width: 133px;
+  height:125px;
+}
+
+.name {
+  text-align: right;
+  width: 75%
+}
+
+.name h1 {
+  font-size: 4em;
+}
+.name h3 {
+  margin-top: -20px;
+  margin-bottom: -1px;
+  font-size: 1.5em;
+}
+
+hr {
+  display: block;
+  height: 0;
+  border-top: 0.5em solid #7d97ad;
+  margin-top: -80px;
+}
+
+.hero {
+  height: 300px;
+  background-image: url('./images/manhattan-336708_1920.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work .cards{
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+.cards p {
+  display: inherit;
+  height: 100px;
+  text-align: center;
+  align-items: flex-end;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+
+}
+
+.portfolioHeader {
+  display:block;
+  font-size: 2em;
+}
+
+.project1 {
+  min-height: 50px;
+  max-height: 300px;
+  background-image: url('./images/Social_Network_Analysis_Visualization.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border: 4px solid black
+}
+
+.project2 {
+  min-height: 50px;
+  max-height: 300px;
+  background-image: url('./images/clones.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border: 4px solid black
+}
+.project3 {
+  min-height: 50px;
+  max-height: 300px;
+  background-image: url('./images/OGProjects.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  width: 100%;
+  border: 4px solid black;
+}
+
+@media screen and (max-width: 375px){
+  .logo {
+    visibility: hidden;
+  }
+
+  header, hr {
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+  }
+
+  .hero {
+    height: 200px;
+    background-image: url('./images/siteBanner5.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+}
+
+@media screen and (min-width: 390px) {
+
+  .project1 {
+    width: 48%;
+  }
+  .project2 {
+    width: 48%;
+  }
+  .project3 {
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .project1 {
+    width: 32%;
+  }
+  .project2 {
+    width: 32%;
+  }
+  .project3 {
+    width: 32%;
+    background-size: contain;
+    justify-content: center;
+  }
+}
+
+a:link {
+  color: blue;
+  text-decoration: none;
+  }
+  a:visited {
+  color: #8c52ff;
+  }
+  a:hover {
+  color: #fdb353;
+  }
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-height: 100px;
+  max-height: 250px;
+  background-color: black;
+  margin-top: auto;
+}
+
+ .social-media {
+  display: inherit;
+  flex-wrap: inherit;
+  flex-direction: row;
+  margin: auto;
+  min-height: 40px;
+  min-width: 80px;
+  align-content: center;
+  justify-content: space-evenly;
+  background-color: #8c52ff;
+
+}
+
+.social-media img {
+  height: auto;
+  width: auto;
+  max-height: 40px;
+  max-width: 40px;
+}
+
+/* .social-media .git{
+  width: 40%;
+}
+
+.social-media .linkedIn{
+  width: 40%;
+} */
+
+/* .git {
+  background-image: url("github-logo-icon-16174.png");
+}
+
+.linkedIn {
+  background-image: url("")
+} */
